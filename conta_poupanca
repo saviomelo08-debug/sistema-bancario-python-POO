@@ -1,0 +1,11 @@
+from contas.conta import Conta
+
+class ContaPoupanca(Conta):
+    def sacar(self, valor: float) -> bool:
+        if valor > 0 and self.saldo >= valor:
+            self._atualizar_saldo(valor)
+            self.historico.adicionar_transacao("Saque", valor)
+            print(f"Saque de R$ {valor:.2f} realizado.")
+            return True
+        print("Saldo insuficiente ou valor inválido!") # Regra de negócio 
+        return False

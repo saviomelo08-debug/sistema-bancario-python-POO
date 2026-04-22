@@ -1,0 +1,22 @@
+sistema_caixa/
+│
+├── banco/               [cite: 27]
+│   ├── __init__.py      
+│   └── banco.py         
+│
+├── clientes/            [cite: 29]
+│   ├── __init__.py      
+│   └── cliente.py       
+│
+├── contas/              [cite: 28]
+│   ├── __init__.py      
+│   ├── conta.py         
+│   ├── conta_corrente.py
+│   └── conta_poupanca.py
+│
+├── operacoes/           [cite: 30]
+│   ├── __init__.py      
+│   └── historico.py     
+│
+├── main.py              [cite: 31]
+└── README.md            [cite: 13]
